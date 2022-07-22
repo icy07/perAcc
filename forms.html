@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Forms</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220722172400">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<a href="#" class="header__messages">
+						<picture><source srcset="img/icons/envelope.webp" type="image/webp"><img src="img/icons/envelope.png" alt="Messages"></picture>
+					</a>
+					<div class="header__lk">
+						<a href="#" class="header__top-logo">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Лого"></picture>
+						</a>
+						<nav class="header__menu">
+							<div class="header__arrow"></div>
+							<ul>
+								<li><a href="#">Activity history</a></li>
+								<li><a href="#">Change password</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="header__container">
+					<p>partner account</p>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__bottom">
+					<div class="header__bottom-wrapper">
+						<div class="header__logo-block">
+							<div class="header__logo">
+								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture>
+							</div>
+							<div class="header__logo-text">
+								Департамент <br> информационных технологий <br> города Москвы
+							</div>
+						</div>
+						<div class="header__bottom-text">
+							<span>Authorized partner</span>
+							<span class="header__bottom-thin-text">License valid through <span class="header__date">07.09.2020</span></span>
+							<span>Your personal manager: <span class="header__name">Pavel Prilepskiy</span></span>
+						</div>
+					</div>
+					<a href="#" class="header__button">
+						Contact partner manager
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="buttons">
+				<div class="buttons__container">
+					<div class="buttons__title">Кнопки, открывающие формы:</div>
+					<div class="buttons__main">
+						<a href="#" data-popup="#form1" class="buttons__btn">Форма 1</a>
+						<a href="#" data-popup="#form2" class="buttons__btn">Форма 2</a>
+						<a href="#" data-popup="#form3" class="buttons__btn">Форма 3</a>
+						<a href="#" data-popup="#form4" class="buttons__btn">Форма 4</a>
+						<a href="#" data-popup="#form5" class="buttons__btn">Форма 5</a>
+						<a href="#" data-popup="#form6" class="buttons__btn">Форма 6</a>
+						<a href="#" data-popup="#form7" class="buttons__btn">Форма 7</a>
+						<a href="#" data-popup="#form8" class="buttons__btn">Форма 8</a>
+						<a href="#" data-popup="#form9" class="buttons__btn">Форма 9</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="form1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						ACCOUNT LOGIn
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required="email" data-validate type="email" name="form[]" placeholder="E-mail" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="password" name="form[]" placeholder="Password" class="form-popup__input">
+						</div>
+						<a href="#" class="form-popup__link">Forgot password?</a>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="LOG IN">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						ENTER YOUR E-MAIL
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required="email" data-validate type="email" name="form[]" placeholder="E-mail" class="form-popup__input">
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="CONFIRM">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						ACCOUNT REGISTRATION
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" type="email" name="form[]" placeholder="a.ivanov@partner.com" class="form-popup__input form-popup__input--inactive">
+							<input autocomplete="off" data-required data-validate type="password" name="form[]" placeholder="Create password" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="password" name="form[]" placeholder="Confirm password" class="form-popup__input">
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SIGN UP">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						PARTNER DEAL REGISTRATION
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Customer name*" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Address*" class="form-popup__input">
+							<div class="form-popup__attach-file">
+								<textarea autocomplete="off" data-required data-validate name="form[]" placeholder="Description*"></textarea>
+								<label>
+									<input autocomplete="off" data-required data-validate type="file" name="form[]">
+									<span> <picture><source srcset="img/icons/file.webp" type="image/webp"><img src="img/icons/file.png" alt="File"></picture> Attach file</span>
+								</label>
+							</div>
+							<input autocomplete="off" type="text" name="form[]" placeholder="Department" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Customer contact name*" class="form-popup__input">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Number of cameras" class="form-popup__input">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Face database size" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Estimated deal close date*" class="form-popup__input">
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SEND">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form5" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						contact US
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<div class="form-popup__attach-file">
+								<textarea autocomplete="off" data-required data-validate name="form[]" placeholder="Enter your message"></textarea>
+								<label>
+									<input autocomplete="off" data-required data-validate type="file" name="form[]">
+									<span> <picture><source srcset="img/icons/file.webp" type="image/webp"><img src="img/icons/file.png" alt="File"></picture> Attach file</span>
+								</label>
+							</div>
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SEND">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form6" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						ENTER NEW PASSWORD
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required data-validate type="password" name="form[]" placeholder="New password" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="password" name="form[]" placeholder="Repeat password" class="form-popup__input">
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form7" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						CONTACT US
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Customer name*" class="form-popup__input">
+							<div class="form-popup__attach-file">
+								<textarea autocomplete="off" data-required data-validate name="form[]" placeholder="Describe your project*"></textarea>
+								<label>
+									<input autocomplete="off" data-required data-validate type="file" name="form[]">
+									<span> <picture><source srcset="img/icons/file.webp" type="image/webp"><img src="img/icons/file.png" alt="File"></picture> Attach file</span>
+								</label>
+							</div>
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SEND">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form8" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Company*" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Name*" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="tel" name="form[]" placeholder="Phone*" class="form-popup__input form-popup__phone">
+							<input autocomplete="off" data-required="email" data-validate type="email" name="form[]" placeholder="Corporate email*" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Number of employees to participate in the training (max. 6)*" class="form-popup__input">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Have you already taken any training? Yes/No*" class="form-popup__input">
+							<textarea autocomplete="off" name="form[]" placeholder="Comment" class="form-popup__ta"></textarea>
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SEND">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="form9" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><picture><source srcset="img/icons/cross.webp" type="image/webp"><img src="img/icons/cross.png" alt="Close"></picture></button>
+				<div class="popup__text">
+					<div class="popup__title">
+						request license
+					</div>
+					<form action="#" class="popup__form form-popup">
+						<div class="form-popup__inputs">
+							<input autocomplete="off" data-required data-validate type="text" name="form[]" placeholder="Customer name*" class="form-popup__input">
+							<select name="form[]" data-required data-validate class="form-popup__select">
+								<option value="" selected>Request type*</option>
+								<option value="Trial">Trial</option>
+								<option value="Extend partner license">Extend partner license</option>
+								<option value="License for customer">License for customer</option>
+							</select>
+							<div class="form-popup__attach-file">
+								<textarea autocomplete="off" name="form[]" placeholder="Enter your message"></textarea>
+								<label>
+									<input autocomplete="off" type="file" name="form[]">
+									<span> <picture><source srcset="img/icons/file.webp" type="image/webp"><img src="img/icons/file.png" alt="File"></picture> Attach file</span>
+								</label>
+							</div>
+						</div>
+						<input autocomplete="off" type="submit" name="form[]" class="form-popup__button" value="SEND">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220722172400"></script>
+</body>
+
+</html>
